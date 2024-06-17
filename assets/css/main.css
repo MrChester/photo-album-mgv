@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Base */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.none {
+    display: none !important;
+}
+
+/* Header */
+
+.header .container {
+    padding: 0;
+}
+
+.navbar-collapse {
+    flex: none;
+}
+
+/* Gallery Section */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.gallery a {
+    position: relative;
+    border: none;
+}
+
+.gallery a img {
+    transition: all 0.2s ease-in;
+    filter: grayscale(50%);
+}
+
+.gallery a:hover img {
+    filter: grayscale(0);
+}
+
+.gallery a:hover .gallery-item-info,
+.gallery a:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 0;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/*** Main Side ***/
+#post {
+    width: 614px;
+    height: 768px;
+    object-fit: cover;
+}
+
+#post-profile-story {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(238, 39, 82);
+    padding: 1px;
+}
+
+#post-nick {
+    /*** Post Owner Nick ***/
+    text-transform: lowercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: #262626;
+}
+
+#post-nick:hover {
+    text-decoration: underline;
+}
+
+#dots {
+    font-size: 14px;
+    color: #262626;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+#dots:hover {
+    transform: scale(1.1);
+}
+
+.buttons-list {
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    font-size: 24px;
+}
+
+#buttons {
+    fill: #0a0908;
+    margin: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+#buttons:first-child {
+    margin-left: 1rem;
+}
+
+#buttons:hover {
+    transform: scale(0.9);
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+h6:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#subtitle-profile {
+    /* Photo on the likes */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#bottom-bar {
+    font-size: 14px;
+}
+
+#show-comments {
+    /* View All Comments */
+    color: #8e8e8e;
+    cursor: pointer;
+}
+
+#comment-like {
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+#comment-like:hover {
+    transform: scale(1.1);
+}
+
+#time-info {
+    color: #8e8e8e;
+    font-size: 10px;
+}
+
+#icons {
+    /* Emoji */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#comment-input {
+    color: #262626;
+    font-size: 14px;
+    outline: none;
+    text-align: start;
+}
+
+/*** Main End ***/
+
+@media only screen and (max-width: 1400px) {
+    .col-9 {
+        width: 79%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .col-9 {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #post-top-bar {
+        margin: 0 1rem;
+    }
+
+    #bottom-bar {
+        font-size: 14px;
+        margin: 0 1rem;
+    }
+}
