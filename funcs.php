@@ -1,7 +1,5 @@
 <?php
 
-defined("MYAPP") or die("No direct script access allowed");
-
 function dump($data)
 {
     echo '<pre>';

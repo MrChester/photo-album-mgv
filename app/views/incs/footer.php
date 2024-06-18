@@ -1,5 +1,3 @@
-<?php defined("MYAPP") or die("No direct script access allowed"); ?>
-
 <footer class="footer bg-success bg-opacity-50">
     <div class="container">
         <div class="p-3 mb-2 text-center">
