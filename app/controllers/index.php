@@ -1,7 +1,5 @@
 <?php
 
-require 'funcs.php';
-
 $title = "Photo album :: Home";
 
 $photos = [
@@ -27,44 +25,44 @@ $photos = [
     ],
     5 => [
         "title" => "Bird",
-        "src" => "./assets/img/photo-05.jpeg",
+        "src" => "assets/img/photo-05.jpeg",
         "slug" => "bird"
     ],
     6 => [
         "title" => "Forest",
-        "src" => "./assets/img/photo-06.jpeg",
+        "src" => "assets/img/photo-06.jpeg",
         "slug" => "forest"
     ],
     7 => [
         "title" => "Nature",
-        "src" => "./assets/img/photo-07.jpeg",
+        "src" => "assets/img/photo-07.jpeg",
         "slug" => "nature"
     ],
     8 => [
         "title" => "Digital",
-        "src" => "./assets/img/photo-08.jpeg",
+        "src" => "assets/img/photo-08.jpeg",
         "slug" => "digital"
     ],
     9 => [
         "title" => "Computer Science",
-        "src" => "./assets/img/photo-09.jpeg",
+        "src" => "assets/img/photo-09.jpeg",
         "slug" => "computer-science"
     ],
     10 => [
         "title" => "Car",
-        "src" => "./assets/img/photo-10.jpeg",
+        "src" => "assets/img/photo-10.jpeg",
         "slug" => "car"
     ],
     11 => [
         "title" => "Train",
-        "src" => "./assets/img/photo-11.jpeg",
+        "src" => "assets/img/photo-11.jpeg",
         "slug" => "train"
     ],
     12 => [
         "title" => "Space",
-        "src" => "./assets/img/photo-12.jpeg",
+        "src" => "assets/img/photo-12.jpeg",
         "slug" => "space"
     ],
 ];
 
-require_once 'app/views/index.tpl.php';
+require_once VIEWS . '/index.tpl.php';

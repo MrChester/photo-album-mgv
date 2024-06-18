@@ -1,4 +1,4 @@
-<?php require 'incs/header.php' ?>
+<?php require VIEWS . '/incs/header.php' ?>
 <main class="main">
     <div class="container">
         <!--Large Screen Size Post Side-->
@@ -6,7 +6,7 @@
             <article class="bg-white">
                 <div id="post-top-bar" class="p-3 d-flex justify-content-between align-items-center">
                     <div>
-                        <img id="post-profile-story" src="./assets/img/avatar-1.jpg" alt="">
+                        <img id="post-profile-story" src="assets/img/avatar-1.jpg" alt="">
                         <label class="d-inline ps-2" for=""><span id="post-nick">williamanderson7</span></label>
                     </div>
                     <div>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="w-100" id="post" src="./assets/img/photo-07.jpeg" alt="">
+                    <img class="w-100" id="post" src="assets/img/photo-07.jpeg" alt="">
                 </div>
                 <div id="bottom-bar">
                     <div class="mt-3">
@@ -28,7 +28,7 @@
                         </ul>
                     </div>
                     <div class="d-flex mt-2 ms-2 ps-2">
-                        <img class="border me-2" id="subtitle-profile" src="./assets/img/avatar-2.jpg" alt="">
+                        <img class="border me-2" id="subtitle-profile" src="assets/img/avatar-2.jpg" alt="">
                         <p>Liked by <span id="weight-600">johndoe</span> and <span id="weight-600">1256
                                 others</span></p>
                     </div>
@@ -61,4 +61,4 @@
         </section>
     </div>
 </main>
-<?php require 'incs/footer.php' ?>
+<?php require VIEWS . '/incs/footer.php' ?>

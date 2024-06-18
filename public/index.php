@@ -1,3 +1,13 @@
 <?php
 
-echo 'Hello from front controller';
+define("ROOT", dirname(__DIR__));
+define("PUBLIC", ROOT . "/public");
+define("CORE", ROOT . "/core");
+define("APP", ROOT . "/app");
+define("CONTROLLERS", APP . "/controllers");
+define("VIEWS", APP . "/views");
+define("PATH", ROOT . "http://photo-album.local");
+
+require CORE . '/funcs.php';
+
+require CONTROLLERS . "/index.php";
