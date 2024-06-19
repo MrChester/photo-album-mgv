@@ -6,8 +6,18 @@ define("CORE", ROOT . "/core");
 define("APP", ROOT . "/app");
 define("CONTROLLERS", APP . "/controllers");
 define("VIEWS", APP . "/views");
-define("PATH", ROOT . "http://photo-album.local");
+define("PATH", "https://photo-album.local");
 
 require CORE . '/funcs.php';
 
-require CONTROLLERS . "/index.php";
+$uri = trim(parse_url($_SERVER['REQUEST_URI'])['path'], "/");
+
+if ($uri === "") {
+    require CONTROLLERS . "/index.php";
+} elseif ($uri === "photos") {
+    require CONTROLLERS . "/photos.php";
+} elseif ($uri === "photo") {
+    require CONTROLLERS . "/photo.php";
+} else {
+    abort();
+}
