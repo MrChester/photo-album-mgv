@@ -5,22 +5,22 @@ $title = "Photo album :: Home";
 $photos = [
     1 => [
         "title" => "Man",
-        "src" => "./assets/img/photo-01.jpeg",
+        "src" => "assets/img/photo-01.jpeg",
         "slug" => "man"
     ],
     2 => [
         "title" => "Woman",
-        "src" => "./assets/img/photo-02.jpeg",
+        "src" => "assets/img/photo-02.jpeg",
         "slug" => "woman"
     ],
     3 => [
         "title" => "Fox",
-        "src" => "./assets/img/photo-03.jpeg",
+        "src" => "assets/img/photo-03.jpeg",
         "slug" => "Fox"
     ],
     4 => [
         "title" => "Cat",
-        "src" => "./assets/img/photo-04.jpeg",
+        "src" => "assets/img/photo-04.jpeg",
         "slug" => "cat"
     ],
     5 => [
