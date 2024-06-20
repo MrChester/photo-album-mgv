@@ -14,7 +14,11 @@
                     </div>
                 </div>
                 <div>
-                    <img class="w-100" id="post" src="assets/img/photo-07.jpeg" alt="">
+                    <?php foreach ($photos as $photo): ?>
+                        <?php if ($photo['id'] === (int) $_GET['photo_id']): ?>
+                            <img class="w-100" id="post" src="<?= $photo['link'] ?>" alt="<?= $photo['slug'] ?>">
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </div>
                 <div id="bottom-bar">
                     <div class="mt-3">
