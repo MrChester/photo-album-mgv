@@ -7,14 +7,28 @@ function dump($data)
     echo '</pre>';
 }
 
+function printr($data)
+{
+    echo '<pre>';
+    print_r($data);
+    echo '</pre>';
+}
+
 function dd($data)
 {
     dump($data);
     die;
 }
 
-function abort($code = 404): void
+function ddp($data)
 {
+    printr($data);
+    die;
+}
+
+function abort($code = 404, $msg = 'Requested page not found'): void
+{
+    // $msg = $message;
     http_response_code($code);
     require CONTROLLERS . "/errors/{$code}.php";
     die;
