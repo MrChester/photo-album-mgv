@@ -14,11 +14,7 @@
                     </div>
                 </div>
                 <div>
-                    <?php foreach ($photos as $photo): ?>
-                        <?php if ($photo['id'] === (int) $_GET['photo_id']): ?>
-                            <img class="w-100" id="post" src="<?= $photo['link'] ?>" alt="<?= $photo['slug'] ?>">
-                        <?php endif; ?>
-                    <?php endforeach; ?>
+                    <img class="w-100" id="post" src="<?= $photo['link'] ?>" alt="<?= $photo['slug'] ?>">
                 </div>
                 <div id="bottom-bar">
                     <div class="mt-3">

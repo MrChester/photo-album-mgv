@@ -1,7 +1,7 @@
 <?php
 
-$title = "Photo album :: Home";
+$categories = $db->query('SELECT * FROM categories')->findAllOrFail();
 
-$categories = $db->query('SELECT * FROM categories')->fetchAll();
+$title = "Photo album :: Home";
 
 require_once VIEWS . '/index.tpl.php';

@@ -1,7 +1,9 @@
 <?php
 
-$title = "Photo album :: Photo";
+$id = (int)$_GET['photo_id'] ?? 0;
 
-$photos = $db->query('SELECT * FROM photos')->fetchAll();
+$photo = $db->query("SELECT * FROM photos WHERE id = ? LIMIT 1", [$id])->findOrFail();
+
+$title = "Photo album :: {$photo['name']}";
 
 require_once VIEWS . '/photo.tpl.php';

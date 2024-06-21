@@ -1,7 +1,7 @@
 <?php
 
-$title = "Photo album :: Album";
+$photos = $db->query('SELECT photos.* FROM photos LEFT JOIN categories ON photos.category_id=categories.id')->findAllOrFail();
 
-$photos = $db->query('SELECT photos.* FROM photos LEFT JOIN categories ON photos.category_id=categories.id')->fetchAll();
+$title = "Photo album :: Album";
 
 require_once VIEWS . '/photos.tpl.php';
