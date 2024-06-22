@@ -4,8 +4,8 @@
         <div class="gallery">
             <?php foreach ($photos as $photo): ?>
                 <a href="photo?photo_id=<?= $photo['id'] ?>" class="text-dark">
-                    <h1 class="h2 px-3 py-2"><?= $photo['name'] ?></h1>
-                    <img class="w-full block rounded-b" src="<?= $photo['link'] ?>" alt="<?= $photo['slug'] ?>">
+                    <h1 class="h2 px-3 py-2"><?= h($photo['name']) ?></h1>
+                    <img class="w-full block rounded-b" src="<?= h($photo['link']) ?>" alt="<?= $photo['slug'] ?>">
                     <div class="gallery-item-info">
                         <ul>
                             <li class="gallery-item-likes">

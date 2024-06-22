@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="w-100" id="post" src="<?= $photo['link'] ?>" alt="<?= $photo['slug'] ?>">
+                    <img class="w-100" id="post" src="<?= h($photo['link']) ?>" alt="<?= $photo['slug'] ?>">
                 </div>
                 <div id="bottom-bar">
                     <div class="mt-3">
